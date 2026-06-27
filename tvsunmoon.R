@@ -114,15 +114,16 @@ dibujar_comparacion_visual <- function(pulgadas, distancia_m, aumento = 12) {
 # Ejemplos de TV a una distancia de 3m
 DIMX <- 512
 DIMX <- 1024
+DIMY <- DIMX*9/16
 
-CairoPNG("tv_sun_moon_42_3m.png", width = DIMX, height = DIMX*9/16)
+CairoPNG("tv_sun_moon_42_3m.png", width = DIMX, height = DIMY)
 dibujar_comparacion_visual(pulgadas = 42, distancia_m = 3)
 dev.off()
 
-CairoPNG("tv_sun_moon_55_3m.png", width = DIMX, height = DIMX*9/16)
+CairoPNG("tv_sun_moon_55_3m.png", width = DIMX, height = DIMY)
 dibujar_comparacion_visual(pulgadas = 55, distancia_m = 3)
 dev.off()
 
-CairoPNG("tv_sun_moon_65_3m.png", width = DIMX, height = DIMX*9/16)
+CairoPNG("tv_sun_moon_65_3m.png", width = DIMX, height = DIMY)
 dibujar_comparacion_visual(pulgadas = 65, distancia_m = 3)
 dev.off()
